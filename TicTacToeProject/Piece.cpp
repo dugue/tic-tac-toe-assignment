@@ -6,3 +6,17 @@ Piece::Piece(char symbol) : symbol(symbol) {}
 
 
 Piece::~Piece(){}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

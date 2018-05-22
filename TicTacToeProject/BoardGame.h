@@ -9,11 +9,10 @@ public:
 	BoardGame(int boardSize);
 	~BoardGame();
 
-	void newGame();
+	void beginGame();
 
 protected:
 	void createRules(std::unique_ptr<Rules> rules);
-	void enterPlayersNames();
 
 private:
 	Board board;

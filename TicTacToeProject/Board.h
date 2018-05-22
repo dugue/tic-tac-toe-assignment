@@ -14,14 +14,14 @@ public:
 	~Board();
 	
 	void repaintConsole();
-	void repaint();
+	void reset();
 
-	int constexpr getSize();
+	int getSize() const { return size; }	
+	vector<Piece> const &getBoardVector() const { return piecesVector; };
 
 private:
 	vector<Piece> piecesVector;
 	const int size;
-	int returnPiece(int x, int y);
 };
 
 #endif

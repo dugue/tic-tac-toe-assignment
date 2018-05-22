@@ -13,6 +13,15 @@ Rules::Rules(int nb) : NumberOfPlayers(nb) {
 };
 Rules::~Rules(){}
 
+void Rules::reset() {
+	playerIterator = playerList.begin();
+}
+
+void Rules::nextPlayer() {
+	if (++playerIterator == playerList.end())
+		playerIterator = playerList.begin();
+}
+
 
 
 

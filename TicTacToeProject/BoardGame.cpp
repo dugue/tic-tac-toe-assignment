@@ -5,15 +5,20 @@ using namespace std;
 
 BoardGame::BoardGame(int boardSize) : board(boardSize) {};
 
-
-BoardGame::~BoardGame()
-{
-}
+BoardGame::~BoardGame(){}
 
 void BoardGame::createRules(std::unique_ptr<Rules> r) { rules = std::move(r); }
 
-void BoardGame::newGame() {
-	board.repaintConsole();
-
-
+void BoardGame::beginGame() {
+	rules->playerChoosesColor();
+	board.reset();
+	rules->reset();
+	bool endGame = false;
+	while (!endGame) {
+		board.repaintConsole();
+		rules->playerPlays();
+		rules->isVictory(board);
+		rules->isDraw(board);
+		rules->nextPlayer();
+	}
 }
