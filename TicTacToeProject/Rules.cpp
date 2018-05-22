@@ -1,0 +1,40 @@
+#include "Rules.h"
+#include <iostream>
+
+using namespace std;
+
+Rules::Rules(int nb) : NumberOfPlayers(nb) {
+	string namePlayer;
+	for (int i = 0; i < nb; i++) {
+		cout << "Enter Player"<<i<<"'s name:";
+		cin >> namePlayer;
+		playerList.push_back(std::unique_ptr<Player>(new HumanPlayer(namePlayer)));
+	}
+};
+Rules::~Rules(){}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

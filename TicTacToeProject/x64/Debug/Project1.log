@@ -1,0 +1,24 @@
+﻿  Board.cpp
+  BoardGame.cpp
+c:\users\rmstr\desktop\github\audioworks\project1\boardgame.cpp(7): error C2512: 'Board' : aucun constructeur par défaut approprié disponible
+  c:\users\rmstr\desktop\github\audioworks\project1\board.h(6): note: voir la déclaration de 'Board'
+  HumanPlayer.cpp
+c:\users\rmstr\desktop\github\audioworks\project1\humanplayer.cpp(6): error C2512: 'Player' : aucun constructeur par défaut approprié disponible
+  c:\users\rmstr\desktop\github\audioworks\project1\player.h(7): note: voir la déclaration de 'Player'
+  main.cpp
+c:\users\rmstr\desktop\github\audioworks\project1\board.h(6): error C2011: 'Board' : redéfinition du type 'class'
+  c:\users\rmstr\desktop\github\audioworks\project1\board.h(6): note: voir la déclaration de 'Board'
+  OPiece.cpp
+  Piece.cpp
+  PieceFactory.cpp
+  Player.cpp
+  Rules.cpp
+  TicTacToe.cpp
+c:\users\rmstr\desktop\github\audioworks\project1\board.h(6): error C2011: 'Board' : redéfinition du type 'class'
+  c:\users\rmstr\desktop\github\audioworks\project1\board.h(6): note: voir la déclaration de 'Board'
+c:\users\rmstr\desktop\github\audioworks\project1\tictactoe.cpp(10): error C2664: 'void BoardGame::createBoard(Board)' : impossible de convertir l'argument 1 de 'int' en 'Board'
+  c:\users\rmstr\desktop\github\audioworks\project1\tictactoe.cpp(10): note: utilisation du type non défini 'Board'
+  c:\users\rmstr\desktop\github\audioworks\project1\board.h(6): note: voir la déclaration de 'Board'
+  TicTacToeRules.cpp
+  XPiece.cpp
+  Génération de code en cours...

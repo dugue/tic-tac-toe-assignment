@@ -1,0 +1,15 @@
+﻿  Board.cpp
+  BoardGame.cpp
+  HumanPlayer.cpp
+  main.cpp
+  OPiece.cpp
+  Piece.cpp
+  PieceFactory.cpp
+  Player.cpp
+  Rules.cpp
+  TicTacToe.cpp
+  TicTacToeRules.cpp
+  XPiece.cpp
+  Génération de code en cours...
+BoardGame.obj : error LNK2019: symbole externe non résolu "public: void __thiscall Board::repaintConsole(void)" (?repaintConsole@Board@@QAEXXZ) référencé dans la fonction "public: void __thiscall BoardGame::newGame(void)" (?newGame@BoardGame@@QAEXXZ)
+C:\Users\RMSTR\Desktop\Github\Audioworks\Debug\TicTacToeAssignment.exe : fatal error LNK1120: 1 externes non résolus
