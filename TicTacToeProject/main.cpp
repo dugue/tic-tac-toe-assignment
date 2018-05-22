@@ -10,7 +10,7 @@ int main( int argc, char* argv[] )
 	int size;
 	cin >> size;
 	TicTacToe myGame(size);
-	myGame.newGame();
+	myGame.beginGame();
 	return EXIT_SUCCESS;
 }
 

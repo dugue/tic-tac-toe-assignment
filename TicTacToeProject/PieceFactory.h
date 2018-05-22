@@ -10,12 +10,13 @@ using namespace std;
 class PieceFactory
 {
 public:
+	PieceFactory();
 	PieceFactory(map<string, Piece>);
 	~PieceFactory();
 
 	Piece createPiece(string playerName);
 
 private:
-	const map<string, Piece> playerToPieceMapping;
+	map<string, Piece> playerToPieceMapping;
 };
 

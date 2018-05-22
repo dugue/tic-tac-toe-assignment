@@ -118,7 +118,7 @@
   <ItemGroup>
     <ClCompile Include="Board.cpp" />
     <ClCompile Include="BoardGame.cpp" />
-    <ClCompile Include="HumanPlayer.cpp" />
+    <ClCompile Include="HumanTicTacToePlayer.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="OPiece.cpp" />
     <ClCompile Include="Piece.cpp" />
@@ -132,7 +132,7 @@
   <ItemGroup>
     <ClInclude Include="Board.h" />
     <ClInclude Include="BoardGame.h" />
-    <ClInclude Include="HumanPlayer.h" />
+    <ClInclude Include="HumanTicTacToePlayer.h" />
     <ClInclude Include="OPiece.h" />
     <ClInclude Include="Piece.h" />
     <ClInclude Include="PieceFactory.h" />

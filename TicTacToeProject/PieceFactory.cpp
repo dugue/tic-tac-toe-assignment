@@ -2,10 +2,13 @@
 
 using namespace std;
 
-PieceFactory::PieceFactory(map<string,Piece>){}
+PieceFactory::PieceFactory() {};
+PieceFactory::PieceFactory(map<string, Piece> mapping) : playerToPieceMapping(mapping) {};
 
 PieceFactory::~PieceFactory(){}
 
 Piece PieceFactory::createPiece(std::string playerName) {
-	return playerToPieceMapping.find(playerName)->second;
+	auto it = playerToPieceMapping.find(playerName);
+	return it->second;
+	
 };

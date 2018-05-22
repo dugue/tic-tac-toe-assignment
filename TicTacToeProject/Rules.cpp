@@ -8,7 +8,7 @@ Rules::Rules(int nb) : NumberOfPlayers(nb) {
 	for (int i = 0; i < nb; i++) {
 		cout << "Enter Player"<<i<<"'s name:";
 		cin >> namePlayer;
-		playerList.push_back(std::unique_ptr<Player>(new HumanPlayer(namePlayer)));
+		playerList.push_back(std::shared_ptr<Player>(new HumanTicTacToePlayer(namePlayer)));
 	}
 };
 Rules::~Rules(){}

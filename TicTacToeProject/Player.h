@@ -8,9 +8,9 @@ class Player
 public:
 	Player(string name);
 	~Player();
-	virtual void takesTurn() = 0;
+	virtual string takesTurn() = 0;
 
-	inline string getName() {return name;}
+	string getName() {return name;}
 
 private:
 	const string name;

@@ -18,6 +18,7 @@ public:
 
 	int getSize() const { return size; }	
 	vector<Piece> const &getBoardVector() const { return piecesVector; };
+	void setPiece(int i, Piece p);
 
 private:
 	vector<Piece> piecesVector;

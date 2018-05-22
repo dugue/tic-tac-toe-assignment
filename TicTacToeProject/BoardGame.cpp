@@ -16,7 +16,7 @@ void BoardGame::beginGame() {
 	bool endGame = false;
 	while (!endGame) {
 		board.repaintConsole();
-		rules->playerPlays();
+		rules->playerPlays(board);
 		rules->isVictory(board);
 		rules->isDraw(board);
 		rules->nextPlayer();

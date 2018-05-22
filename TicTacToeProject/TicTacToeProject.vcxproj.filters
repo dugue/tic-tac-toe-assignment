@@ -39,9 +39,6 @@
     <ClCompile Include="PieceFactory.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
-    <ClCompile Include="HumanPlayer.cpp">
-      <Filter>Fichiers sources</Filter>
-    </ClCompile>
     <ClCompile Include="Rules.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
@@ -49,6 +46,9 @@
       <Filter>Fichiers sources</Filter>
     </ClCompile>
     <ClCompile Include="TicTacToeRules.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="HumanTicTacToePlayer.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
   </ItemGroup>
@@ -74,9 +74,6 @@
     <ClInclude Include="PieceFactory.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
-    <ClInclude Include="HumanPlayer.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
     <ClInclude Include="Rules.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
@@ -84,6 +81,9 @@
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
     <ClInclude Include="TicTacToeRules.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="HumanTicTacToePlayer.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
   </ItemGroup>
