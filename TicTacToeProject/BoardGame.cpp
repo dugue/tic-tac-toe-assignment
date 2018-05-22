@@ -14,11 +14,16 @@ void BoardGame::beginGame() {
 	board.reset();
 	rules->reset();
 	bool endGame = false;
+	bool isVictory = false;
+	bool isDraw = false;
 	while (!endGame) {
 		board.repaintConsole();
 		rules->playerPlays(board);
-		rules->isVictory(board);
-		rules->isDraw(board);
+		rules->isVictory(board)			? isVictory = true : isVictory = false;
+		if(!isVictory)
+			rules->isDraw(board)		? isDraw	= true : isDraw = false;
+		if (isVictory || isDraw)
+			endGame = true;
 		rules->nextPlayer();
 	}
 }

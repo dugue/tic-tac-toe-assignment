@@ -15,7 +15,13 @@ bool TicTacToeRules::isVictory(const Board &board) {
 	}	
 	return false;
 }
-bool TicTacToeRules::isDraw(const Board &board) { return false; }
+bool TicTacToeRules::isDraw(const Board &board) {
+	for (auto piece : board.getBoardVector()) {
+		if (piece.symbol == ' ')
+			return false;
+	}
+	return true; 
+}
 bool TicTacToeRules::whoWins(const Board &board) { return true; }
 void TicTacToeRules::playerChoosesColor(){
 	string chosenSymbol;
